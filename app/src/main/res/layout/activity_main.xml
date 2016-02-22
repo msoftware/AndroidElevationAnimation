@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:id="@+id/navigationDrawer"
+        android:background="#CCCCCC">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="top"
+            android:gravity="top"
+            android:background="#CCCCCC"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="24dp"
+                android:layout_weight="1"
+                android:id="@+id/newRecipeLayout1"
+                android:elevation="@dimen/lower_elevation"
+                android:background="@color/inactive_tab_color">
+            <Button
+                android:layout_height="48dp"
+                android:layout_width="match_parent"
+                android:text="Recipe"
+                android:layout_margin="0dp"
+                android:background="@color/inactive_tab_color"
+                android:id="@+id/newRecipeButton1"
+                android:onClick="onNewRecipeButton1" />
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="top"
+                android:layout_marginTop="24dp"
+                android:gravity="top"
+                android:id="@+id/newRecipeLayout2"
+                android:layout_weight="1"
+                android:elevation="@dimen/lower_elevation"
+                android:background="@color/inactive_tab_color">
+                <Button
+                    android:layout_height="48dp"
+                    android:layout_width="match_parent"
+                    android:text="Ingredients"
+                    android:layout_margin="0dp"
+                    android:background="@color/inactive_tab_color"
+                    android:id="@+id/newRecipeButton2"
+                    android:onClick="onNewRecipeButton2"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:layout_marginTop="24dp"
+                android:layout_weight="1"
+                android:id="@+id/newRecipeLayout3"
+                android:elevation="@dimen/lower_elevation"
+                android:background="@color/inactive_tab_color">
+                <Button
+                    android:layout_height="48dp"
+                    android:layout_width="match_parent"
+                    android:text="Groups"
+                    android:layout_margin="0dp"
+                    android:background="@color/inactive_tab_color"
+                    android:id="@+id/newRecipeButton3"
+                    android:onClick="onNewRecipeButton3"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="24dp"
+                android:id="@+id/newRecipeLayout4"
+                android:layout_weight="1"
+                android:elevation="@dimen/lower_elevation"
+                android:background="@color/inactive_tab_color">
+                <Button
+                    android:layout_height="48dp"
+                    android:layout_width="match_parent"
+                    android:text="More"
+                    android:layout_margin="0dp"
+                    android:background="@color/inactive_tab_color"
+                    android:id="@+id/newRecipeButton4"
+                    android:onClick="onNewRecipeButton4"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="fill"
+            android:gravity="fill"
+            android:elevation="@dimen/upper_elevation"
+            android:background="#FFFFFF"
+            android:layout_marginTop="0dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="64dp"
+            android:layout_marginBottom="64dp">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
+
